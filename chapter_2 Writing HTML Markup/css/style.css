@@ -43,8 +43,13 @@ img {
 .ImageCaption {
 	font-size: .75rem;
 	position: absolute;
-	bottom: .5rem;
-	right: 1rem;
+	bottom: 0.5rem;
+	right: 0rem;
+	color: black;
+	background-color: #e8cfa9;
+	padding: 5px;
+	width:100%;
+	text-align: right;
 }
 
 .IntroText {
