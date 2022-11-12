@@ -2,10 +2,12 @@ div {
   --angle: 0deg;
   width: 50vmin;
   height: 50vmin;
-  border: 10vmin solid;
-  border-image: conic-gradient(from var(--angle), red, yellow, lime, aqua, blue, magenta, red) 1;
+  border: 1px dashed;
+  border-radius: 5px;
+  padding: 10px;
+  border-image: conic-gradient(from var(--angle), red 10deg, yellow 10deg 30deg, lime, aqua, blue, magenta, red) 1;
   
-  animation: 10s rotate linear infinite;
+  animation: 3s rotate ease-in-out infinite;
 }
 
 @keyframes rotate {
