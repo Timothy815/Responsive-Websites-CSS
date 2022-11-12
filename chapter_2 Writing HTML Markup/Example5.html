@@ -5,25 +5,35 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <style>
+            #dialogEle{
+                border:1px solid black;
+                border-radius:5px;
+                box-shadow: 3px 3px 5px #00000055;
+                background-color: #FFFFFF55;
+            }
             dialog {
-                border-radius: 10px;
+                border-radius: 5px;
             }
             dialog::backdrop {
-                animation: fade 0.5s ease forwards;
+                animation: fade 0.3s ease forwards;
             }
-            button {
+            button{
                 height: 40px;
                 padding: 5px 10px;
+                background: #cccccc99;
+                
+                
             }
             button:focus {
-                outline: 2px solid #f90;
+                outline: 1px solid #99f;
+                
             }
             @keyframes fade {
                 0% {
                     background-color: transparent;
                 }
                 100% {
-                    background-color: rgb(0 57 24 / 0.6);
+                    background-color: rgb(57 57 57 / 0.9);
                 }
             }
         </style>
@@ -35,7 +45,7 @@
             <form method="dialog">
                 <h1>How about this? A native Dialog.</h1>
                 <p>So, only thing left to do is dismiss me.</p>
-                <button value="Dismissed!">Dismiss Dialog</button>
+                <button id="dismissed" value="Dismissed!" >Dismiss Dialog</button>
             </form>
         </dialog>
         <script>
